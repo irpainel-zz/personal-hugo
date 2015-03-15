@@ -12,6 +12,7 @@ Using a 3D maps, I want to create an interactive timeline to show the progressio
 
 ###Design Inspirations:
 * [Infographic map](https://www.pinterest.com/pin/74661306295524299/)
+* [Google Earth](https://earthengine.google.org/#intro/Amazon)
 
 
 ###References (in Portuguese):
