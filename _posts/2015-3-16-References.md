@@ -3,8 +3,9 @@ layout: post
 title: Concepts and inspirations
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+The Project's idea is to raise awareness about the deforestation in Amazon rainforest.
+Using a 3D maps, I want to create an interactive timeline to show the progression of the deforestation. It will be possible to see how was the density of the rainforest in the past, the actual situation, and what will happen in the future.
 
 ![_config.yml]({{ site.baseurl }}/images/map.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+![_config.yml]({{ site.baseurl }}/images/desm-amazon.jpg)
+![_config.yml]({{ site.baseurl }}/images/amazon-dez-2014.jpg)
