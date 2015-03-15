@@ -10,4 +10,4 @@ Using a 3D maps, I want to create an interactive timeline to show the progressio
 ![_config.yml]({{ site.baseurl }}/images/desm-amazon.jpg)
 ![_config.yml]({{ site.baseurl }}/images/amazon-dez-2014.jpg)
 
-[This link](http://example.net/) has no title attribute.
+![This link](http://example.net/) has no title attribute.
