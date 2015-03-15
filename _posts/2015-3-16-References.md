@@ -10,7 +10,8 @@ Using a 3D maps, I want to create an interactive timeline to show the progressio
 ![_config.yml]({{ site.baseurl }}/images/desm-amazon.jpg)
 ![_config.yml]({{ site.baseurl }}/images/amazon-dez-2014.jpg)
 
-
-#References (in Portuguese):
+###Design Inspirations:
+* [Infographic map](https://www.pinterest.com/pin/74661306295524299/)
+###References (in Portuguese):
 * [Desmatamento tem alta na Amazônia em agosto e setembro, diz    Imazon.](http://g1.globo.com/natureza/noticia/2014/10/desmatamento-aumenta-na-amazonia-diz-boletim-da-imazon.html)
 * [Desmatamento na Amazônia tem alta de 427% em novembro, diz Imazon](http://g1.globo.com/natureza/noticia/2014/12/desmatamento-na-amazonia-tem-alta-de-427-em-novembro-diz-imazon.html)
