@@ -12,5 +12,5 @@ Using a 3D maps, I want to create an interactive timeline to show the progressio
 
 
 #References (in Portuguese):
-[Desmatamento tem alta na Amazônia em agosto e setembro, diz Imazon.](http://g1.globo.com/natureza/noticia/2014/10/desmatamento-aumenta-na-amazonia-diz-boletim-da-imazon.html)
-[Desmatamento na Amazônia tem alta de 427% em novembro, diz Imazon](http://g1.globo.com/natureza/noticia/2014/12/desmatamento-na-amazonia-tem-alta-de-427-em-novembro-diz-imazon.html)
+* [Desmatamento tem alta na Amazônia em agosto e setembro, diz    Imazon.](http://g1.globo.com/natureza/noticia/2014/10/desmatamento-aumenta-na-amazonia-diz-boletim-da-imazon.html)
+* [Desmatamento na Amazônia tem alta de 427% em novembro, diz Imazon](http://g1.globo.com/natureza/noticia/2014/12/desmatamento-na-amazonia-tem-alta-de-427-em-novembro-diz-imazon.html)
