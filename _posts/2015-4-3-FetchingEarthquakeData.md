@@ -66,12 +66,20 @@ def tableChange(dat):
 
 			#break origin time
 			ot = datetime.strptime(eqProperties['origintime'], '%Y-%m-%dT%H:%M:%S.%fZ').timetuple()
+      #year
 			eqValues.append(ot[0])
+			#month
 			eqValues.append(ot[1])
+			#day
 			eqValues.append(ot[2])
+			#hour
 			eqValues.append(ot[3])
+			#minute
 			eqValues.append(ot[4])
 			eqTable.appendRow(eqValues)
 	print ('Json ok')
 	return
   {% endhighlight %}
+
+  When the JSON is parsed, the data will show up nicely in the earthquake table:
+  ![_config.yml]({{ site.baseurl }}/images/eqtable.png)
