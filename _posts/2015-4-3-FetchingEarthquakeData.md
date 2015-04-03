@@ -18,6 +18,7 @@ To fetch the data in TouchDesigner, a 'DAT web' component is used with a 'DAT ex
 
 ###Web network:
 ![_config.yml]({{ site.baseurl }}/images/webjsonparser.png)
+
 ###Parser inside the 'DAT execute' component:
 
 {% highlight python %}
