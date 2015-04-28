@@ -3,6 +3,8 @@ layout: post
 title: Fetching Earthquake data from Geonet.org.nz to TouchDesigner
 ---
 
+![_config.yml]({{ site.baseurl }}/images/geonetindex.png)
+
 Our project is an interactive earthquake visualizer, so information about the earthquakes is the main requirement. In New Zealand the best service that provides data about earthquakes is [GeoNet](geonet.org.nz), the website also provides a very smart API that returns data in several formats including JSON, the format that I'm going to use in the project.
 
 Geonet provides a query constructor at [quakesearch.geonet.org.nz](http://quakesearch.geonet.org.nz/):
@@ -81,5 +83,7 @@ def tableChange(dat):
 	return
   {% endhighlight %}
 
-  When the JSON is parsed, the data will show up nicely in the earthquake table:
-  ![_config.yml]({{ site.baseurl }}/images/eqtable.png)
+When the JSON is parsed, the data will show up nicely in the earthquake table:
+![_config.yml]({{ site.baseurl }}/images/eqtable.png)
+
+Now this table holds all the needed information to display the earthquakes
