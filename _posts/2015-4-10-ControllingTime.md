@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controlling time
+title: Controlling Time
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/timespan.png)
