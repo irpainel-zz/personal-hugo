@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 Iury Painelli
+
 Developer
 
 
