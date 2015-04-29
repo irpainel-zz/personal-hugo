@@ -1,17 +1,10 @@
 ---
 layout: post
-title: Earthquakes In A Day
+title: Final Thoughts
 ---
 
-![_config.yml]({{ site.baseurl }}/images/peaks.gif)
+![_config.yml]({{ site.baseurl }}/images/final.gif)
 
-After fetching the earthquake data using the [JSON Parser]({{ site.baseurl }}/FetchingEarthquakeData/), I had to create some nodes to show the earthquakes as the time pass by that day.
-
-###Table with all the earthquakes in that particular day:
-![_config.yml]({{ site.baseurl }}/images/eqtable.png)
-
-After the information is nicely placed in the table, two 'DAT Select' are used to select the right information at the right time:
-![_config.yml]({{ site.baseurl }}/images/selects.gif)
-
-The first select fetches the data based on the hour in the 'CHOP Constant' time. The second select fetches the data from 'select1' based on the minute.
-After the process, I created two 'CHOP Trail' to export the data (As seen in the first Post image)
+Working with this project was really surprising for me. I have learned so many things, not only about the Design process and TouchDesigner, but about the seismic activity in New Zealand as well.
+I see this project as an useful tool for educators, it would be interesting seeing teachers using this application to teach their students about Earthquakes.
+The possibilities to improve the project are endless, we could create a better way to interact or make the final result looks better. I also think that the there is not enough information being shown, basic important information such as Magnitude and Depth. It would not be hard to implement these small tweaks and would make the final result more educational.
