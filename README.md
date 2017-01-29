@@ -1,116 +1,97 @@
-# Jekyll Now
+# Freelancer Theme
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Freelancer Theme is a one page freelancer portfolio based on the [original Bootstrap theme](//github.com/IronSummitMedia/startbootstrap-freelancer) by [David Miller](//github.com/davidtmiller) and on [Jerome Lachaud](//github.com/jeromelachaud)'s [Jekyll theme](//github.com/jeromelachaud/freelancer-theme). This Hugo theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals and a contact form.
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+![Hugo Freelancer Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-freelancer-theme/master/images/screenshot.png)
 
-- You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependancies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
 
-In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+## Installation
 
-![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+Inside the folder of your Hugo site run:
 
-## Quick Start
+    $ cd themes
+    $ git clone https://github.com/digitalcraftsman/hugo-freelancer-theme
 
-### Step 1) Fork Jekyll Now to your User Repository
+For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can force it to build by completing step 2)
+## Getting started
 
-![Step 1](/images/step1.gif "Step 1")
+After installing the Freelancer Theme successfully it requires a just a few more steps to get your site running.
 
-### Step 2) Customize and view your site
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+### The config file
 
-Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <http://yourgithubusername.github.io>
+Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml).
+It contains detailed information about the setup of the contact form ([or see below](#make-the-contact-form-working)) and the customization of all strings in this theme. 
 
-> There are 3 different ways that you can make changes to your blog's files:
+To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like.
 
-> 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
-> 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
 
-![_config.yml](/images/config.png "_config.yml")
-  
-### Step 3) Publish your first blog post
+### Make the contact form working
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-![First Post](/images/first-post.png "First Post")
+1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml)
+2. Upload the generated site to your server
+3. Send a dummy email yourself to confirm your account
+4. Click the confirm link in the email from [formspree.io](//formspree.io/)
+5. You're done. Happy mailing!
 
-> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
-## Local Development
+### Add social networks
 
-1. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-2. Install Jekyll and the same plug-ins as GitHub Pages `gem install github-pages`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://0.0.0.0:4000
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+In the footer you can link some of your social network accounts. Search for `[params.footer.social.networks]` at the bottom of the file. The configuration should look similar to this one:
 
-## Moar!
+```toml
+[[params.footer.social.networks]]
+    icon = "fa-github"
+    link = "//github.com/spf13/hugo"
+```
 
-I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
+The variable 'icon' represents the shown icon of the social network. It's a CSS class of Fontawesome's popular icon font. Search [here](//fortawesome.github.io/Font-Awesome/icons) if you need a particular icon.
 
-It covers:
+### Create your portfolio
 
-- A more detailed walkthrough of setting up your Jekyll blog
-- Common issues that you might encounter while using Jekyll
-- Importing from Wordpress, using your own domain name, and blogging in your favorite editor
-- Theming in Jekyll, with Liquid templating examples
-- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
+Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-13-project-1.yaml) written in YAML:
 
-## Jekyll Now Features
+```yaml
+modalID: 1
+title: Project Cabin
+date: 2014-07-13
+img: cabin.png
+client: Start Bootstrap
+clientLink: "#"
+category: Web Development
+description: Use this area of the page to describe your project. The icon above is part of a free icon set by [Flat Icons](//sellfy.com/p/8Q9P/jV3VZ/"). On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+```
 
-✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
-✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
-✓ Sass/Coffeescript support using Jekyll 2.0  
-✓ Free hosting on your GitHub Pages user site  
-✓ Markdown blogging  
-✓ Syntax highlighting  
-✓ Disqus commenting  
-✓ Google Analytics integration  
-✓ SVG social icons for your footer  
-✓ 3 http requests, including your avatar  
-✓ Emoji in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
+Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder in the **root** directory of your site. Let's make some changes to show your work.
 
-✘ No installing dependancies  
-✘ No need to set up local development  
-✘ No configuring plugins  
-✘ No need to spend time on theming  
-✘ More time to code other things ... wait ✓!  
+Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
-## Questions?
+Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of an project inside `static/img/portfolio` and **just** enter the filename.
 
-[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Get my new themes
+### Nearly finished
 
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://eepurl.com/XUZpT). I'm currently working on a hacker portfolio site theme.
+In order to see your site in action, run Hugo's built-in local server. 
 
-## Other forkable themes
+    $ hugo server
 
-You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of  my favorites:
+Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-- [Hyde](https://github.com/poole/hyde) by MDO
-- [Lanyon](https://github.com/poole/lanyon) by MDO
-- [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
-- [Left](https://github.com/holman/left) by Zach Holman
-- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
-- [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll) by Michael Rose
 
-## Credits
+## Contributing
 
-- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to it's creators, contributors and maintainers.
-- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful. 
-- [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
-- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
-- [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
-- [Bart Kiers](https://github.com/bkiers), [Florian Simon](https://github.com/vermluh), [Hun Jae Lee](https://github.com/hunjaelee), [Javier Cejudo](https://github.com/javiercejudo), [Peter Etelej](https://github.com/etelej) - Thanks for your [fantastic contributions](https://github.com/barryclark/jekyll-now/commits/master) to the project!
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-freelancer-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-freelancer-theme/pulls).
 
+
+## License
+
+This theme is released under the Apache License 2.0 For more information read the [License](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/LICENSE).
+
+
+## Annotations
+
+Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
