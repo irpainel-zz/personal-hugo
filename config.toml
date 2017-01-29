@@ -101,17 +101,21 @@ title = "Iury Painelli"
             address = ["São Paulo", "Brazil"]
 
         [params.footer.social]
-            title = "Around the web"
+            title = "Contact me!"
             # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
             # for more icons. The icons are represented by their corresponding
             # CSS class.
             [[params.footer.social.networks]]
                 icon = "fa-github"
-                link = "//github.com/spf13/hugo"
+                link = "//github.com/irpainel"
 
             [[params.footer.social.networks]]
                 icon = "fa-stack-overflow"
-                link=  "//stackoverflow.com/questions/tagged/hugo"
+                link=  "//stackoverflow.com/users/3191130/iurypainelli"
+
+            [[params.footer.social.networks]]
+                icon = "fa-linkedin-square"
+                link=  "//www.linkedin.com/in/iurypainelli"
 
 
         [params.footer.credits]
