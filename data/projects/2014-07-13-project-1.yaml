@@ -1,8 +1,0 @@
-modalID: 1
-title: Meu Nextel
-date: 2017
-img: nextel.png
-client: Nextel Communications
-clientLink: "http://www.nextel.com.br/"
-category: iOS and Android Development
-description: Meu Nextel ([iOS](https://itunes.apple.com/br/app/meu-nextel/id937756042?mt=8) and [Android](https://play.google.com/store/apps/details?id=br.com.nextel.ecommerce&hl=pt-br) ) application has more than 3 million active users. After receiving low ratings in both App Store and Google Play, Nextel hired Hummingbird to rebuild the applications using Clean Architecture. The new iOS version is still in development.
